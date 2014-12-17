@@ -1,10 +1,15 @@
 #!/bin/bash
-# command line build script for building the debug version
+# command line build script for building debug version
+set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ATE_ROOT="$( cd $DIR/.. && pwd )"
 
 cd "$ATE_ROOT"
-rm -rf bin obj
-cd jni
-$ANDROID_NDK_ROOT/ndk-build && cd .. && ant debug
+
+if [ ! -f "local.properties" ]; then
+    echo "local.properties does not exist. Please create it."
+    exit 1
+fi
+
+./gradlew assembleDebug
