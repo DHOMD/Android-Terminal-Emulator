@@ -97,10 +97,6 @@
    <string name="summary_initialcommand_preference">Передаются облочке при запуске терминала.</string>
    <string name="dialog_title_initialcommand_preference">Команды запуска</string>
 
-   <string name="title_initialcommand_preference">Начальная команда</string>
-   <string name="summary_initialcommand_preference">Отправлять в оболочку при её запуске.</string>
-   <string name="dialog_title_initialcommand_preference">Начальная команда</string>
-
    <string name="title_termtype_preference">Тип терминала</string>
    <string name="summary_termtype_preference">Тип терминала передаваемый оболочке.</string>
    <string name="dialog_title_termtype_preference">Тип терминала</string>
